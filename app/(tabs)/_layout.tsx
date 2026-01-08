@@ -2,7 +2,10 @@ import { Tabs } from "expo-router";
 import React from "react";
 
 import { HapticTab } from "@/components/haptic-tab";
-import { IconSymbol } from "@/components/ui/icon-symbol";
+import { HomeIcon } from "@/components/icons/HomeIcon";
+import { StarIcon } from "@/components/icons/StarIcon";
+import { TicketIcon } from "@/components/icons/TicketIcon";
+import { UserIcon } from "@/components/icons/UserIcon";
 import { Colors } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 
@@ -21,35 +24,30 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "Home",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="house.fill" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <HomeIcon size={28} color={color} />,
         }}
       />
       <Tabs.Screen
         name="explore/index"
         options={{
           title: "Explore",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <StarIcon size={28} color={color} />,
         }}
       />
-       <Tabs.Screen
+      <Tabs.Screen
         name="tickets/index"
         options={{
           title: "Tickets",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <TicketIcon size={28} color={color} />,
         }}
       />
-       <Tabs.Screen
+      <Tabs.Screen
         name="profile/index"
         options={{
           title: "Profile",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
+            // <IconSymbol size={28} name="paperplane.fill" color={color} />
+            <UserIcon size={28} color={color} />
           ),
         }}
       />

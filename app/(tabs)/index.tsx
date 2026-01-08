@@ -1,8 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 
-import { NotificationIcon } from "@/components/icons/NotificationIcon";
+import { BellIcon } from "@/components/icons/BellIcon";
 import { Screen } from "@/components/screen";
-import { FontSizes, FontWeights } from "@/constants/theme";
+import { FontSizes, FontWeights, Radius } from "@/constants/theme";
+import { Image } from "expo-image";
 import { useRouter } from "expo-router";
 
 export default function HomeScreen() {
@@ -12,8 +13,6 @@ export default function HomeScreen() {
     <Screen edges={["top"]}>
       {/* header */}
       <Header />
-
-
     </Screen>
   );
 }
@@ -28,10 +27,18 @@ function Header() {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        alignContent:"center"
+        alignItems: "center",
       }}
     >
-      <View style={{ display: "flex", flexDirection: "row", gap: 6 }}>
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: 6,
+          alignItems: "center",
+        }}
+      >
+        <Image style={{ backgroundColor: "gray", width: 45, height: 50, borderRadius:Radius.lg }} />
         <View>
           <Text
             style={{
@@ -39,7 +46,7 @@ function Header() {
               fontSize: FontSizes.xxl,
             }}
           >
-            Welcome
+            Welcome,
           </Text>
           <Text
             style={{
@@ -51,7 +58,7 @@ function Header() {
           </Text>
         </View>
       </View>
-      <NotificationIcon/>
+      <BellIcon size={32} />
     </View>
   );
 }
@@ -61,16 +68,5 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: "absolute",
   },
 });
