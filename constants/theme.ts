@@ -26,7 +26,7 @@ export const Colors = {
   light: {
     /** Brand */
     primary: BRAND_PRIMARY,
-    primaryDark: BRAND_PRIMARY_DARK,
+    primaryOposite: BRAND_PRIMARY_DARK,
 
     /** Base */
     background: WHITE,
@@ -52,8 +52,8 @@ export const Colors = {
 
   dark: {
     /** Brand */
-    primary: BRAND_PRIMARY,
-    primaryDark: BRAND_PRIMARY_DARK,
+    primary: BRAND_PRIMARY_DARK,
+    primaryOposite: BRAND_PRIMARY,
 
     /** Base */
     background: BLACK,
@@ -108,7 +108,7 @@ export const Fonts = Platform.select({
 /** =========================
  *  Typography scale
  *  ========================= */
-export const fontSizes = {
+export const FontSizes = {
   xs: 12,
   sm: 14,
   base: 16,
@@ -118,7 +118,7 @@ export const fontSizes = {
   xxxl: 30,
 };
 
-export const fontWeights = {
+export const FontWeights = {
   infra: "MDNichromeInfra",
   thin: "MDNichromeThin",
   light: "MDNichromeLight",
@@ -132,7 +132,7 @@ export const fontWeights = {
 /** =========================
  *  Spacing + Radius (Suggested defaults)
  *  ========================= */
-export const spacing = {
+export const Spacing = {
   xs: 4,
   sm: 8,
   md: 12,
@@ -142,7 +142,7 @@ export const spacing = {
   xxxl: 32,
 };
 
-export const radius = {
+export const Radius = {
   sm: 8,
   md: 12,
   lg: 16,
@@ -153,7 +153,7 @@ export const radius = {
 /** =========================
  *  Shadows (Suggested defaults)
  *  ========================= */
-export const shadows = Platform.select({
+export const Shadows = Platform.select({
   ios: {
     card: {
       shadowColor: "#000",
@@ -183,7 +183,7 @@ export const Components = {
         backgroundColor: c.primary,
         textColor: mode === "dark" ? BLACK : BLACK, // black text on neon green
         borderColor: "transparent",
-        pressedBg: c.primaryDark,
+        pressedBg: c.primary, // dark?
         disabledBg: mode === "dark" ? "#203027" : "#BFEFD7",
         disabledText: mode === "dark" ? "#7EA590" : "#2C4D3A",
       };
