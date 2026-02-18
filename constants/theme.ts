@@ -118,7 +118,7 @@ export const FontSizes = {
   xxxl: 30,
 };
 
-export const FontWeights = {
+export const FontMDNichromeWeights = {
   infra: "MDNichromeInfra",
   thin: "MDNichromeThin",
   light: "MDNichromeLight",
@@ -127,6 +127,21 @@ export const FontWeights = {
   bold: "MDNichromeBold",
   black: "MDNichromeBlack",
   ultra: "MDNichromeUltra",
+};
+
+export const FontIBMPlexSansArabicThinWeights = {
+  thin: "IBMPlexSansArabicThin",
+  extraLight: "IBMPlexSansArabicExtraLight",
+  light: "IBMPlexSansArabicLight",
+  regular: "IBMPlexSansArabicRegular",
+  medium: "IBMPlexSansArabicMedium",
+  semiBold: "IBMPlexSansArabicSemiBold",
+  bold: "IBMPlexSansArabicBold",
+};
+
+export const FontFamilies = {
+  manrope: "Manrope",
+  peaceSans: "PeaceSans",
 };
 
 /** =========================

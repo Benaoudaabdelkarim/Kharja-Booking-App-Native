@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 import { BellIcon } from "@/components/icons/BellIcon";
 import { Screen } from "@/components/screen";
-import { FontSizes, FontWeights, Radius } from "@/constants/theme";
+import { FontFamilies, FontSizes, Radius } from "@/constants/theme";
 import { Image } from "expo-image";
 import { useRouter } from "expo-router";
 
@@ -38,24 +38,32 @@ function Header() {
           alignItems: "center",
         }}
       >
-        <Image style={{ backgroundColor: "gray", width: 45, height: 50, borderRadius:Radius.lg }} />
+        <Image
+          style={{
+            backgroundColor: "gray",
+            width: 45,
+            height: 50,
+            borderRadius: Radius.lg,
+          }}
+        />
         <View>
           <Text
             style={{
-              fontFamily: FontWeights.bold,
-              fontSize: FontSizes.xxl,
+              fontFamily: FontFamilies.peaceSans,
+              fontSize: FontSizes.xl,
             }}
           >
             Welcome,
           </Text>
           <Text
             style={{
-              fontFamily: FontWeights.normal,
-              fontSize: FontSizes.xxxl,
+              fontFamily: FontFamilies.manrope,
+              fontSize: FontSizes.xxl,
             }}
           >
             Abdelkarim Benaouda
           </Text>
+          +
         </View>
       </View>
       <BellIcon size={32} />

@@ -26,6 +26,21 @@ export default function RootLayout() {
     MDNichromeBold: require("../assets/fonts/MdNichrome/MDNichromeTest-Bold.otf"),
     MDNichromeBlack: require("../assets/fonts/MdNichrome/MDNichromeTest-Black.otf"),
     MDNichromeUltra: require("../assets/fonts/MdNichrome/MDNichromeTest-Ultra.otf"),
+    
+    // Manrope display font
+    Manrope: require("../assets/fonts/Manrope/Manrope.ttf"),
+
+    // PeaceSans display font
+    PeaceSans: require("../assets/fonts/PeaceSans/PeaceSans.otf"),
+
+    // IBMPlexSansArabic display font (for Arabic support)
+    IBMPlexSansArabicThin: require("../assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Thin.ttf"),
+    IBMPlexSansArabicExtraLight: require("../assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-ExtraLight.ttf"),
+    IBMPlexSansArabicLight: require("../assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Light.ttf"),
+    IBMPlexSansArabicRegular: require("../assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Regular.ttf"),
+    IBMPlexSansArabicMedium: require("../assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Medium.ttf"),
+    IBMPlexSansArabicSemiBold: require("../assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-SemiBold.ttf"),
+    IBMPlexSansArabicBold: require("../assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Bold.ttf"),
   });
   
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, ViewProps } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Colors, FontSizes, FontWeights, Spacing } from "../constants/theme";
+import { Colors, FontSizes, Spacing } from "../constants/theme";
 
 type ScreenProps = ViewProps & {
   title?: string;
@@ -27,7 +27,7 @@ export function Screen({
       {title && (
         <Text
           style={{
-            fontFamily: FontWeights.ultra,
+            // fontFamily: FontWeights.ultra,
             fontSize: FontSizes.xxl,
             marginBottom: Spacing.lg,
           }}
